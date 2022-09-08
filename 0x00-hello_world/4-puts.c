@@ -1,9 +1,15 @@
 #include <stdio.h>
 
-/* A c program to print a string without the use of printf */
+/**
+ * main - Entry point
+ *
+ * Description: 'A program that print a script using puts
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
