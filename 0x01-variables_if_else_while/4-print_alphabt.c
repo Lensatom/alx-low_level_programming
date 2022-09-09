@@ -14,7 +14,7 @@ int main(void)
 
 	for (a = 'a'; a <= 'z'; a++)
 	{
-		if (a == 'p' || a == 'q')
+		if (a == 'q' || a == 'e')
 		{
 			continue;
 		};
