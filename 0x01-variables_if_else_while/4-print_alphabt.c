@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Printing letters of the english alphabet using putchar
+ * Description: A program that skips a loop
  *
  * Return: always 0 (success)
  */
@@ -14,6 +14,10 @@ int main(void)
 
 	for (a = 'a'; a < 'z'; a++)
 	{
+		if (a == 'p' || a == 'q')
+		{
+			continue;
+		};
 		putchar(a);
 	};
 	putchar('\n');

@@ -3,16 +3,16 @@
 /**
  * main - entry point
  *
- * Description: Printing letters of the english alphabet using putchar
+ * Description: A program that prints the alphabets in reverse
  *
- * Return: always 0 (success)
+ * Return always 0 (success)
  */
 
 int main(void)
 {
 	int a;
 
-	for (a = 'a'; a < 'z'; a++)
+	for (a = 'z'; a >= 'a'; a--)
 	{
 		putchar(a);
 	};

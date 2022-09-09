@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Printing letters of the english alphabet using putchar
+ * Description: A program that prints all hexadecimal characters
  *
  * Return: always 0 (success)
  */
@@ -12,7 +12,11 @@ int main(void)
 {
 	int a;
 
-	for (a = 'a'; a < 'z'; a++)
+	for (a = '0'; a < '9'; a++)
+	{
+		putchar(a);
+	};
+	for (a = 'A'; a <= 'F'; a++)
 	{
 		putchar(a);
 	};

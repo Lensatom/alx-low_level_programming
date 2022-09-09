@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Printing letters of the english alphabet using putchar
+ * Description: A code that prints all singe digits in base 10
  *
  * Return: always 0 (success)
  */
@@ -12,9 +12,9 @@ int main(void)
 {
 	int a;
 
-	for (a = 'a'; a < 'z'; a++)
+	for (a = 0; a < 10; a++)
 	{
-		putchar(a);
+	       	printf("%d", a);
 	};
 	putchar('\n');
 
