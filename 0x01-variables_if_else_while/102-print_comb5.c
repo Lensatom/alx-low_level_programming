@@ -21,14 +21,14 @@ int main(void)
 		{
 			for (c = '0'; c <= '9'; c++)
 			{
-				for (d = b; d <= '9'; d++)
+				for (d = b + 1; d <= '9'; d++)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(' ');
 					putchar(c);
 					putchar(d);
-					if (b < '8')
+					if (a == '9' && b == '8' && c == '9' && d == '9')
 					{
 						putchar(',');
 						putchar(' ');
