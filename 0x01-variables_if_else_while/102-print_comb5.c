@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	char a;
+	char b;
+	char c;
+	char d;
 
 	for (a = '0'; a <= '9'; a++)
 	{
@@ -21,11 +21,20 @@ int main(void)
 		{
 			for (c = '0'; c <= '9'; c++)
 			{
-				for (d = 0; d <= '9'; d++)
+				for (d = '0'; d <= '9'; d++)
 				{
-					if (a == c || b == d)
+					if (d == '0')
 					{
-						continue;
+						if (c >= a)
+						{
+							continue;
+						};
+					} else
+					{
+						if (d >= a)
+						{
+							continue;
+						};
 					};
 					putchar(a);
 					putchar(b);
