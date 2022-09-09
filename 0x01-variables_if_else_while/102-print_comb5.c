@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	char a;
-	char b;
-	char c;
-	char d;
+	int a;
+	int b;
+	int c;
+	int d;
 
 	for (a = '0'; a <= '9'; a++)
 	{
