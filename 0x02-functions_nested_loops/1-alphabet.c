@@ -1,21 +1,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Description: Proram that prints letters of the alphabet
- *
- * Return: always 0 (success)
- */
-
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
-
-/**
  * print_alphabet - assecory function
  *
  * Description: Program printing letters
