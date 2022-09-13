@@ -12,24 +12,29 @@ void times_table(void)
 {
 	int i = 0,
 	    j = 0,
+	    result,
+	    tens,
 	    output;
 
-	while (i < 9)
+	for (; i <= '9'; i++)
 	{
-		j = 0;
-		while (j < 9)
+		result = 0;
+		for (; j <= 9; j++)
 		{
-			output = j + '0';
+			result = result + j;
+			tens = result / 10;
+			if (tens > 0)
+			{
+				putchar(tens);
+			}
+			output = result % 10;
 			putchar(output);
 			putchar(',');
 			putchar(' ');
-			putchar(' ');
-			putchar(' ');
-
-			j = j + i;
+			if (tens == 0)
+			{
+				putchar(' ');
 		};
 		putchar('\n');
-
-		i++;
 	};
 }
