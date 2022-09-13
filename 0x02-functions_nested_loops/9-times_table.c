@@ -1,40 +1,34 @@
 #include "main.h"
 
 /**
- * jack_bauer - accessory function
+ * times_table - accessory function
  *
- * Description: Prints every minute of the day in Jack Bauer Format
+ * Description: Prints the tines table from 0 to 9
  *
- * Return: Always 0 (success)
+ * Return: Always void (success)
  */
 
-void jack_bauer(void)
+void times_table(void)
 {
 	int i = 0,
 	    j = 0,
-	    h1,
-	    h2,
-	    m1,
-	    m2;
+	    output;
 
-	while (i < 24)
+	while (i < 9)
 	{
 		j = 0;
-		while (j < 60)
+		while (j < 9)
 		{
-			h1 = i / 10 + '0';
-			h2 = i % 10 + '0';
-			m1 = j / 10 + '0';
-			m2 = j % 10 + '0';
-			putchar(h1);
-			putchar(h2);
-			putchar(':');
-			putchar(m1);
-			putchar(m2);
-			putchar('\n');
+			output = j + '0';
+			putchar(output);
+			putchar(',');
+			putchar(' ');
+			putchar(' ');
+			putchar(' ');
 
-			j++;
-		}
+			j = j + i;
+		};
+		putchar('\n');
 
 		i++;
 	};
