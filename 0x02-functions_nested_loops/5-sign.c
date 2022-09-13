@@ -1,27 +1,30 @@
 #include "main.h"
 
 /**
- * _isalpha - assccory function
+ * print_sign - assccory function
  *
- * Description: returns a value for if c is a number or letter
+ * Description: returns a value for if n is negative, positive or neutral
  *
  * @c: the undecided character type
  *
  * Return: 0 or 1 (success)
  */
 
-int _isalpha(int c)
+int print_sign(int n)
 {
-	int decider,
-	    output;
+	int output;
 
-	decider = isalpha(c);
-	if (decider > 0)
+	if (n > 0)
 	{
+		putchar('+');
 		output = 1;
-	} else
+	} else if (n == '0')
 	{
+		putchar('0');
 		output = 0;
+	} else {
+		putchar('-');
+		output = -1;
 	};
 
 	return (output);
