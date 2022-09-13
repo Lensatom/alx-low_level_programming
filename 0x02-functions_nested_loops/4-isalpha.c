@@ -1,23 +1,27 @@
 #include "main.h"
 
 /**
- * _isalpha - asseccory function
+ * _isalpha - assccory function
  *
- * Description: returns a value for if the parameter is an alphabet or not
+ * Description: returns a value for if c is a number or letter
+ *
+ * @c: the undecided character type
  *
  * Return: 0 or 1 (success)
  */
 
 int _isalpha(int c)
 {
-	int output;
+	int decider,
+	    output;
 
-	output = isalpha(c);
-	if (output > 0)
+	decider = isalpha(c);
+	if (decider > 0)
 	{
-		return (1);
-	} else
-	{
-		return (0);
+		output = 1;
+	} else {
+		output = 0;
 	};
+
+	return (output);
 }

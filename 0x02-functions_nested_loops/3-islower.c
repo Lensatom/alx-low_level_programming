@@ -5,19 +5,23 @@
  *
  * Description: returns a value for if the letter is lowercase or not
  *
+ * @c: the undecided letter type
+ *
  * Return: 0 or 1 (success)
  */
 
 int _islower(int c)
 {
-	int output;
+	int decider,
+	    output;
 
-	output = islower(c);
-	if (output > 0)
+	decider = islower(c);
+	if (decider > 0)
 	{
-		return (1);
-	} else
-	{
-		return (0);
+		output = 1;
+	} else {
+		output = 0;
 	};
+
+	return (output);
 }
