@@ -1,21 +1,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Description: A program that prints the alphabets ten times
- *
- * Return: always 0 (success)
- */
-
-int main(void)
-{
-	print_alphabet_x10();
-
-	return (0);
-}
-
-/**
  * print_alphabet_x10 - asseccory function
  *
  * Description: The funtion that prints the alphabets
