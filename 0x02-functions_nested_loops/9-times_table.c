@@ -26,7 +26,7 @@ void times_table(void)
 			if (tens > 0)
 			{
 				putchar(tens);
-			}
+			};
 			output = result % 10;
 			putchar(output);
 			putchar(',');
@@ -34,6 +34,7 @@ void times_table(void)
 			if (tens == 0)
 			{
 				putchar(' ');
+			};
 		};
 		putchar('\n');
 	};
