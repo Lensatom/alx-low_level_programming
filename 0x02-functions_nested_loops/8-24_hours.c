@@ -1,6 +1,4 @@
-#include "stdio.h"
-
-void jack_bauer(void);
+#include "main.h"
 
 /**
  * main - check the code
@@ -8,21 +6,6 @@ void jack_bauer(void);
  * Description: Prints every minute of the day in Jack Bauer Format
  *
  * Return: Always 0 (success)
- */
-
-int main(void)
-{
-	jack_bauer();
-
-	return (0);
-};
-
-/**
- * jack_bauer - accessory function
- *
- * Description: The program that handles the time printing
- *
- * Return: always void (success)
  */
 
 void jack_bauer(void)
