@@ -16,7 +16,7 @@ void times_table(void)
 	    tens,
 	    output;
 
-	for (; i <= '9'; i++)
+	for (; i <= 9; i++)
 	{
 		result = 0;
 		for (; j <= 9; j++)
