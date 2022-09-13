@@ -13,7 +13,7 @@ int main(void)
 	print_alphabet();
 
 	return (0);
-};
+}
 
 /**
  * print_alphabet - assecory function
@@ -32,6 +32,4 @@ void print_alphabet(void)
 		putchar(i);
 	};
 	putchar('\n');
-
-	return;
 }
