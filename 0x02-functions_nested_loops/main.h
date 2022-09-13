@@ -1,6 +1,8 @@
 #include "stdio.h"
 #include "ctype.h"
 
+int _putchar(int r);
+
 /* Function protype for file 1-alphabet.c */
 void print_alphabet(void);
 
