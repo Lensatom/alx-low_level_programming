@@ -23,7 +23,7 @@ int main(void)
  * Return: always void (success)
  */
 
-void print_alphabet(void)
+void print_alphabet()
 {
 	int i;
 
