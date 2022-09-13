@@ -5,7 +5,7 @@
  *
  * Description: returns a value for if n is negative, positive or neutral
  *
- * @c: the undecided character type
+ * @n: the undecided number
  *
  * Return: 0 or 1 (success)
  */
