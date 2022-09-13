@@ -25,10 +25,10 @@ void times_table(void)
 			tens = result / 10;
 			if (tens > 0)
 			{
-				putchar(tens);
+				putchar(tens + '0');
 			};
 			output = result % 10;
-			putchar(output);
+			putchar(output + '0');
 			putchar(',');
 			putchar(' ');
 			if (tens == 0)
