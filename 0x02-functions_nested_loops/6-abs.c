@@ -1,28 +1,20 @@
 #include "main.h"
 
 /**
- * _isalpha - assccory function
+ * _abs - assccory function
  *
- * Description: returns a value for if c is a number or letter
+ * Description: returns the absolute value of n
  *
- * @c: the undecided character type
+ * @n: the undecided number
  *
- * Return: 0 or 1 (success)
+ * Return: the absolute value of n (success)
  */
 
-int _isalpha(int c)
+int _abs(int n)
 {
-	int decider,
-	    output;
+	int output;
 
-	decider = isalpha(c);
-	if (decider > 0)
-	{
-		output = 1;
-	} else
-	{
-		output = 0;
-	};
+	output = abs(n);
 
 	return (output);
 }
