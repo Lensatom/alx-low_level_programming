@@ -1,43 +1,22 @@
 #include "main.h"
 
 /**
- * times_table - accessory function
+ * add - accessory function
  *
- * Description: Prints the tines table from 0 to 9
+ * Description: returns the result of the addition of two parameters a and b
+ *
+ * @a: The first parameter to be added
+ *
+ * @b: The second parameter to be added
  *
  * Return: Always void (success)
  */
 
-void times_table(void)
+int add(int a, int b)
 {
-	int i,
-	    j,
-	    result,
-	    tens,
-	    output;
+	int output;
 
-	for (i = 0; i <= 9; i++)
-	{
-		result = 0;
-		for (j = 0; j <= 9; j++)
-		{
-			tens = result / 10;
-			if (tens > 0)
-			{
-				putchar(tens + '0');
-			} else if (j > 0)
-			{
-				putchar(' ');
-			};
-			output = result % 10;
-			putchar(output + '0');
-			if (j < 9)
-			{
-				putchar(',');
-				putchar(' ');
-			};
-			result = result + i;
-		};
-		putchar('\n');
-	};
+	result = a + b;
+	
+	return (output);
 }
