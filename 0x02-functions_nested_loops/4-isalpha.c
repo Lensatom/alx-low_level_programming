@@ -19,7 +19,7 @@ int main()
 	putchar('\n');
 
 	return (0);
-};
+}
 
 /**
  * _isalpha - asseccory function
@@ -41,4 +41,4 @@ int _isalpha(int c)
 	{
 		return (0);
 	};
-};
+}

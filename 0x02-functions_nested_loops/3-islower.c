@@ -19,7 +19,7 @@ int main()
 	putchar('\n');
 
 	return (0);
-};
+}
 
 /**
  * _islower - assccory function
@@ -41,4 +41,4 @@ int _islower(int c)
 	{
 		return (0);
 	};
-};
+}
