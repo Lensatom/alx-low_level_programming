@@ -1,22 +1,36 @@
 #include "main.h"
 
 /**
- * add - accessory function
+ * print_to_98 - accessory function
  *
- * Description: returns the result of the addition of two parameters a and b
+ * Description: prints every number from n to 98
  *
- * @a: The first parameter to be added
+ * @n: The nuber to start from on the count to 98
  *
- * @b: The second parameter to be added
- *
- * Return: Always void (success)
+ * Return: Always 0 (success)
  */
 
-int add(int a, int b)
+int print_to_98(int n)
 {
-	int output;
+	int i,
+	    tens,
+	    output;
 
-	output = a + b;
+	for (i = n; i < 99; i++)
+	{
+		tens = i / 10;
+		if (tens > 0)
+		{
+			putchar(tens + '0');
+		};
+		output = i % 10;
+		putchar(output + '0');
+		if (i < 98)
+		{
+			putchar(',');
+			putchar(' ');
+		};
+	};
 
-	return (output);
+	return (0);
 }
