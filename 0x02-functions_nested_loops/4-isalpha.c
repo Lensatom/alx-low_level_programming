@@ -19,7 +19,8 @@ int _isalpha(int c)
 	if (decider > 0)
 	{
 		output = 1;
-	} else {
+	} else
+	{
 		output = 0;
 	};
 
