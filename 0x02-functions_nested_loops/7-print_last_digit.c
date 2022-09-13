@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _abs - assccory function
+ * print_last_digit - assccory function
  *
- * Description: returns the absolute value of n
+ * Description: returns the last digit in n
  *
- * @n: the undecided number
+ * @n: the input number
  *
- * Return: the absolute value of n (success)
+ * Return: the last digit in n (success)
  */
 
-int _abs(int n)
+int print_last_digit(int n)
 {
 	int output;
 
-	output = abs(n);
+	output = n % 10;
 
 	return (output);
 }
