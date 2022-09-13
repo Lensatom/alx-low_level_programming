@@ -25,7 +25,7 @@ void times_table(void)
 			if (tens > 0)
 			{
 				putchar(tens + '0');
-			} else
+			} else if (j > 0)
 			{
 				putchar(' ');
 			};
