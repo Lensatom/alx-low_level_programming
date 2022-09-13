@@ -7,10 +7,10 @@
  *
  * @n: The nuber to start from on the count to 98
  *
- * Return: Always 0 (success)
+ * Return: Always void (success)
  */
 
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	int i,
 	    tens,
@@ -31,6 +31,4 @@ int print_to_98(int n)
 			putchar(' ');
 		};
 	};
-
-	return (0);
 }
