@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * jack_bauer - accessory function
  *
  * Description: Prints every minute of the day in Jack Bauer Format
  *
@@ -37,7 +37,5 @@ void jack_bauer(void)
 		}
 
 		i++;
-	}
-
-	return;
+	};
 }
