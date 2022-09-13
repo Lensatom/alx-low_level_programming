@@ -21,7 +21,6 @@ void times_table(void)
 		result = 0;
 		for (; j <= 9; j++)
 		{
-			result = result + j;
 			tens = result / 10;
 			if (tens > 0)
 			{
@@ -35,6 +34,7 @@ void times_table(void)
 			{
 				putchar(' ');
 			};
+			result = result + i;
 		};
 		putchar('\n');
 	};
