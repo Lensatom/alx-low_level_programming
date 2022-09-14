@@ -19,7 +19,7 @@ void print_to_98(int n)
 
 	int count(int);
 
-	for (i = n; i < 99, i++)
+	for (i = n; i < 99; i++)
 	{
 		count(i);
 	};
