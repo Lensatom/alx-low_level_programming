@@ -31,7 +31,7 @@ void print_times_table(int n)
 			show(result);
 			if (j < n)
 			{
-				putchar(',')
+				putchar(',');
 			};
 			result = result + i;
 		};
