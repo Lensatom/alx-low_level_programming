@@ -38,7 +38,7 @@ void print_times_table(int n)
 
 int show(int result)
 {
-	int hund,
+	int hunds,
 	    tens;
 
 	putchar(' ');
