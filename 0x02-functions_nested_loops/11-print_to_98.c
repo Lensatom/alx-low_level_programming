@@ -22,10 +22,10 @@ void print_to_98(int n)
 
 		if (i > 98)
 		{
-			i--
+			i--;
 		} else
 		{
-			i++
+			i++;
 		};
 	putchar('\n');
 }
