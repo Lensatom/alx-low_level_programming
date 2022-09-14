@@ -1,5 +1,7 @@
 #include "main.h"
 
+int count(int);
+
 /**
  * print_to_98 - accessory function
  *
@@ -17,8 +19,6 @@ void print_to_98(int n)
 	    tens,
 	    output;
 
-	int count(int);
-
 	for (i = n; i < 99; i++)
 	{
 		count(i);
@@ -27,31 +27,44 @@ void print_to_98(int n)
 	{
 		count(i);
 	};
-
-	int count(int i)
-	{
-		if (i < 0)
-		{
-			putchar('-');
-		};
-		tens = abs(i) / 10;
-		if (tens > 0)
-		{
-			hunds = tens / 10;
-			if (hunds > 0)
-			{
-				putchar(hunds + '0');
-			};
-			tens = tens % 10;
-			putchar(tens + '0');
-		};
-		output = abs(i) % 10;
-		putchar(output + '0');
-		if (i < 98)
-		{
-			putchar(',');
-			putchar(' ');
-		};
-	};
 	putchar('\n');
 }
+
+/**
+ * count - secondary function
+ *
+ * Description: prints out each number on the count to 98
+ *
+ * @i: the number to be printed
+ *
+ * Return always 0 (success)
+ */
+
+int count(int i)
+{
+	if (i < 0)
+	{
+		putchar('-');
+	};
+	tens = abs(i) / 10;
+	if (tens > 0)
+	{
+		hunds = tens / 10;
+		if (hunds > 0)
+		{
+			putchar(hunds + '0');
+		};
+		tens = tens % 10;
+		putchar(tens + '0');
+	};
+	output = abs(i) % 10;
+	putchar(output + '0');
+	if (i < 98)
+	{
+		putchar(',');
+		putchar(' ');
+	};
+
+	return (0);
+}
+
