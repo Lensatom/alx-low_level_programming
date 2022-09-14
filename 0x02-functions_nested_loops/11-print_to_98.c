@@ -18,7 +18,11 @@ void print_to_98(int n)
 
 	for (i = n; i < 99; i++)
 	{
-		tens = i / 10;
+		if (n < 0)
+		{
+			putchar('-');
+		};
+		tens = abs(i) / 10;
 		if (tens > 0)
 		{
 			putchar(tens + '0');
