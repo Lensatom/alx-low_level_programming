@@ -3,7 +3,8 @@
 /**
  * main - entry point
  *
- * Description: A program that prints the sum of even number till 4000000 in the fibonacci sequence
+ * Description: A program that prints the sum of even number (excluded)
+ * till 4000000 in the fibonacci sequence
  *
  * Return: always 0 (success)
  */
