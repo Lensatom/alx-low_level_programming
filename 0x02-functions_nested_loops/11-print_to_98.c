@@ -14,10 +14,7 @@ int count(int);
 
 void print_to_98(int n)
 {
-	int i,
-	    hunds,
-	    tens,
-	    output;
+	int i;
 
 	for (i = n; i < 99; i++)
 	{
@@ -42,6 +39,10 @@ void print_to_98(int n)
 
 int count(int i)
 {
+	int hunds,
+	    tens,
+	    output;
+
 	if (i < 0)
 	{
 		putchar('-');
