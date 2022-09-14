@@ -3,6 +3,7 @@
 int main(void)
 {
 	int i,
+	    sum,
 	    fib1 = 1,
 	    fib2 = 2;
 
