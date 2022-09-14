@@ -32,13 +32,7 @@ void print_times_table(int n)
 			if (tens > 0)
 			{
 				hunds = tens / 10;
-				if (hunds > 0)
-				{
-					putchar(hunds + '0');
-				} else if (j > 0)
-				{
-					putchar(' ');
-				};
+				hunds > 0 ? putchar(hunds + '0') : j > 0 ? putchar(' ') : continue;
 				tens = tens % 10;
 				putchar(tens + '0');
 			} else if (j > 0)
