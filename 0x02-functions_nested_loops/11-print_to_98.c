@@ -17,7 +17,18 @@ void print_to_98(int n)
 	    tens,
 	    output;
 
-	for (i = n; i < 99; i++)
+	int count(int);
+
+	for (i = n; i < 99, i++)
+	{
+		count(i);
+	};
+	for (i = n; i > 97; i--)
+	{
+		count(i);
+	};
+
+	int count(int i)
 	{
 		if (i < 0)
 		{
