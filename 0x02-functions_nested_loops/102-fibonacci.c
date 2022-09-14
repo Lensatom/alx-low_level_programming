@@ -3,7 +3,8 @@
 /**
  * main - entry point
  *
- * Description: A program that prints all numbers till 1024 divisible by 3 or 5
+ * description: A program that prints all numbers till 1024 divisible by 3 or 5
+ *
  * Return: always 0 (success)
  */
 
