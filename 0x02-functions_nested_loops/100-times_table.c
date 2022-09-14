@@ -28,7 +28,7 @@ void print_times_table(int n)
 		result = i;
 		if (n != 0)
 		{
-			putchar(',')
+			putchar(',');
 		};
 		for (j = 1; j <= n; j++)
 		{
