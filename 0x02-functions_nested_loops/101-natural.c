@@ -1,12 +1,14 @@
 #include "main.h"
 
 /*
- * main - a program that that prints all numbers below 1024
+ * main - accessory funtion
+ *
+ * Description - a program that prints all numbers below 1024
  *
  * Retuen: always 0 (success)
  */
 
-int main (void)
+int main(void)
 {
 	int i, sum = 0;
 
