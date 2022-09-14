@@ -1,32 +1,44 @@
 #include "main.h"
 
 /**
- * times_table - accessory function
+ * print_times_table - accessory function
  *
- * Description: Prints the tines table from 0 to 9
+ * Description: Prints the times table from 0 to n
+ *
+ * @n: The limit of the times table
  *
  * Return: Always void (success)
  */
 
-void times_table(void)
+int print_times_table(int n)
 {
 	int i,
 	    j,
 	    result,
+	    hunds,
 	    tens,
 	    output;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= n; i++)
 	{
 		result = 0;
-		for (j = 0; j <= 9; j++)
+		for (j = 0; j <= n; j++)
 		{
 			tens = result / 10;
 			if (tens > 0)
 			{
+				hunds = tens / 10;
+				if (hunds > 0)
+				{
+					putchar(hunds + '0');
+				} else if (j > 0)
+				{
+					putchar(' ');
+				};
 				putchar(tens + '0');
 			} else if (j > 0)
 			{
+				putchar(' ');
 				putchar(' ');
 			};
 			output = result % 10;
