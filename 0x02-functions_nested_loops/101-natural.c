@@ -3,7 +3,7 @@
 /*
  * main - accessory funtion
  *
- * Description - a program that prints all numbers below 1024
+ * Description: a program that prints all numbers below 1024
  *
  * Retuen: always 0 (success)
  */
