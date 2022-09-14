@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "ctype.h"
 #include "stdlib.h"
+#include "limits.h"
 
 int _putchar(int r);
 
