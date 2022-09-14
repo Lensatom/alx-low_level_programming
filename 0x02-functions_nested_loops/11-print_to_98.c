@@ -25,6 +25,12 @@ void print_to_98(int n)
 		tens = abs(i) / 10;
 		if (tens > 0)
 		{
+			hunds = tens / 10;
+			if (hunds > 0)
+			{
+				putchar(hunds + '0');
+			};
+			tens = tens % 10;
 			putchar(tens + '0');
 		};
 		output = abs(i) % 10;
