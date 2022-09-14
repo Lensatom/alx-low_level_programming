@@ -1,6 +1,6 @@
 #include "main.h"
 
-int show(int);
+void show(int);
 
 /**
  * print_times_table - accessory function
@@ -36,7 +36,7 @@ void print_times_table(int n)
 	};
 }
 
-int show(int result)
+void show(int result)
 {
 	int hunds,
 	    tens;
