@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - entry point
  *
  * Description: A program that prints all numbers below 1024
@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	int i, sum = 0;
+	int i,
+	    sum = 0;
 
 	for (i = 0; i < 1024; i++)
 	{
