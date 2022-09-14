@@ -39,9 +39,7 @@ void print_times_table(int n)
 				tens = tens % 10;
 				putchar(tens + '0');
 			} else {
-				purtchar(' ');
-"x
-:x
+				putchar(' ');
 			output = result % 10;
 			putchar(output + '0');
 			if (j < n)
