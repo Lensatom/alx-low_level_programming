@@ -32,7 +32,7 @@ void print_times_table(int n)
 		};
 		for (j = 1; j <= n; j++)
 		{
-			putchar('0');
+			putchar(' ');
 			show(result);
 			if (j < n)
 			{
