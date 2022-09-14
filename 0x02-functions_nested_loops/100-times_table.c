@@ -51,7 +51,7 @@ int show(int result)
 			putchar(hunds + '0');
 		} else
 		{
-			putchar(' ')
+			putchar(' ');
 		};
 		putchar(tens % 10 + '0');
 	} else
