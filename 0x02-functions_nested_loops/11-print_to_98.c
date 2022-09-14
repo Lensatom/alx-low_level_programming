@@ -18,7 +18,7 @@ void print_to_98(int n)
 
 	for (i = n; i < 99; i++)
 	{
-		if (n < 0)
+		if (i < 0)
 		{
 			putchar('-');
 		};
