@@ -1,12 +1,6 @@
 #include "stdio.h"
 
-/**
- * main - entry point
- *
- * description: A program that prints all numbers till 1024 divisible by 3 or 5
- *
- * Return: always 0 (success)
- */
+
 
 int main(void)
 {
