@@ -3,9 +3,11 @@
 int main(void)
 {
 	int i,
-	    fib1,
-	    fib2;
+	    fib1 = 1,
+	    fib2 = 2;
 
+	putchar(fib1 + '0');
+	putchar(fib2 + '0');
 	for (i = 0; i < 50; i++)
 	{
 		fib1 = fib2;
