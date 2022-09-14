@@ -32,7 +32,6 @@ void print_times_table(int n)
 		};
 		for (j = 1; j <= n; j++)
 		{
-			putchar(' ');
 			show(result);
 			if (j < n)
 			{
@@ -65,6 +64,7 @@ void show(int result)
 		putchar(tens % 10 + '0');
 	} else
 	{
+		putchar(' ');
 		putchar(' ');
 	};
 	putchar(result % 10 + '0');
