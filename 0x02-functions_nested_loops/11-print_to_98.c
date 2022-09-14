@@ -16,14 +16,17 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i < 99; i++)
+	while (i != 98)
 	{
 		count(i);
-	};
-	for (i = n; i > 97; i--)
-	{
-		count(i);
-	};
+
+		if (i > 98)
+		{
+			i--
+		} else
+		{
+			i++
+		};
 	putchar('\n');
 }
 
@@ -34,7 +37,7 @@ void print_to_98(int n)
  *
  * @i: the number to be printed
  *
- * Return always 0 (success)
+ * Return: always 0 (success)
  */
 
 int count(int i)
@@ -60,7 +63,7 @@ int count(int i)
 	};
 	output = abs(i) % 10;
 	putchar(output + '0');
-	if (i < 98)
+	if (i < 98 || i > 98)
 	{
 		putchar(',');
 		putchar(' ');
