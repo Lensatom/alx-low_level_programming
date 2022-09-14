@@ -5,7 +5,7 @@
  *
  * Description: a program that prints all numbers below 1024
  *
- * Retuen: always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
