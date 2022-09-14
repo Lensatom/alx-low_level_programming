@@ -15,8 +15,7 @@ int main(void)
 	    fib1 = 1,
 	    fib2 = 2;
 
-	putchar(fib1 + '0');
-	putchar(fib2 + '0');
+	printf("%d, %d", fib1, fib2)
 	for (i = 0; i < 50; i++)
 	{
 		fib1 = fib2;
@@ -25,11 +24,10 @@ int main(void)
 		printf("%d", sum);
 		if (i < 49)
 		{
-			putchar(',');
-			putchar(' ');
+			printf(" ,");
 		};
 	};
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
