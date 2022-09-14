@@ -39,6 +39,7 @@ void print_times_table(int n)
 				{
 					putchar(' ');
 				};
+				tens = tens % 10;
 				putchar(tens + '0');
 			} else if (j > 0)
 			{
