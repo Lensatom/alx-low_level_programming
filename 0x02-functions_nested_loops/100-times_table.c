@@ -44,6 +44,16 @@ void print_times_table(int n)
 	};
 }
 
+/**
+ * show - Helper function
+ *
+ * Description: Prints the result in a tabular form
+ *
+ * @result: The number to be printed
+ *
+ * Return: always void (success)
+ */
+
 void show(int result)
 {
 	int hunds,
