@@ -21,7 +21,7 @@ int main(void)
 		printf("%lu", sum);
 		if (i < 49)
 		{
-			printf(" ,");
+			printf(", ");
 		};
 		fib1 = fib2;
 		fib2 = sum;
