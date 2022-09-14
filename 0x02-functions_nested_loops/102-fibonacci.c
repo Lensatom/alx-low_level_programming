@@ -22,7 +22,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 		sum = fib1 + fib2;
-		putchar(sum);
+		printf("%d", sum);
 		if (i < 49)
 		{
 			putchar(',');
