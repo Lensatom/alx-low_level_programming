@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(void)
+void main(void)
 {
 	int i,
 	    sum,
@@ -16,8 +16,10 @@ int main(void)
 		sum = fib1 + fib2;
 		putchar(sum);
 		if (i < 49)
+		{
 			putchar(',');
 			putchar(' ');
-	}
+		};
+	};
 	putchar('\n');
 }
