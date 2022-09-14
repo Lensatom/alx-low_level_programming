@@ -17,12 +17,12 @@ int print_last_digit(int n)
 	if (n == INT_MIN)
 	{
 		output = abs(-n) % 10;
-		_putchar(output);
+		_putchar(output + '0');
 	} else
 	{
 		output = abs(n) % 10;
-		_putchar(output);
+		_putchar(output + '0');
 	};
 
-	return (output);
+	return (abs(n) % 10);
 }
