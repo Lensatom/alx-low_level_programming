@@ -22,6 +22,7 @@ int print_last_digit(int n)
 	{
 		output = abs(n) % 10;
 		_putchar(output);
+	};
 
 	return (output);
 }
