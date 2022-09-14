@@ -13,9 +13,15 @@
 int print_last_digit(int n)
 {
 	int output;
-
-	output = abs(-n) % 10;
-	_putchar(output);
+	
+	if (n == INT_MIN)
+	{
+		output = abs(-n) % 10;
+		_putchar(output);
+	} else
+	{
+		output = abs(n) % 10;
+		_putchar(output);
 
 	return (output);
 }
