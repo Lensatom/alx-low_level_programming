@@ -15,7 +15,8 @@ int count(int);
 void print_to_98(int n)
 {
 	int i;
-
+	
+	i = n;
 	while (i != 98)
 	{
 		count(i);
