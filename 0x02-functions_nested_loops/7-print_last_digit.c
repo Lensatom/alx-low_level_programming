@@ -16,7 +16,7 @@ int print_last_digit(int n)
 	
 	if (n == INT_MIN)
 	{
-		output = abs(-n) % 10;
+		output = -n % 10;
 		_putchar(output + '0');
 	} else
 	{
