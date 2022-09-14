@@ -12,11 +12,11 @@
 
 void print_to_98(int n)
 {
-	int i,
+	int i = 0,
 	    tens,
 	    output;
 
-	for (i = n; i < 99; i++)
+	for (; i < 99; i++)
 	{
 		if (n < 0)
 		{
@@ -27,7 +27,7 @@ void print_to_98(int n)
 		{
 			putchar(tens + '0');
 		};
-		output = i % 10;
+		output = abs(i) % 10;
 		putchar(output + '0');
 		if (i < 98)
 		{
