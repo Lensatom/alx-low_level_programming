@@ -1,6 +1,14 @@
 #include "stdio.h"
 
-void main(void)
+/**
+ * main - entry point
+ *
+ * Description: Function that prints the first 50 fibonacci sequence
+ *
+ * Return: always 0 (success)
+ */
+
+int main(void)
 {
 	int i,
 	    sum,
@@ -22,4 +30,6 @@ void main(void)
 		};
 	};
 	putchar('\n');
+
+	return (0);
 }
