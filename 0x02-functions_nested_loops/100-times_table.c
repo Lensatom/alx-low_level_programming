@@ -40,6 +40,7 @@ void print_times_table(int n)
 				putchar(tens + '0');
 			} else {
 				putchar(' ');
+			};
 			output = result % 10;
 			putchar(output + '0');
 			if (j < n)
