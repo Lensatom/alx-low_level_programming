@@ -14,10 +14,7 @@ void print_times_table(int n)
 {
 	int i,
 	    j,
-	    result,
-	    hunds,
-	    tens,
-	    output;
+	    result;
 
 	for (i = 0; i <= n; i++)
 	{
@@ -25,31 +22,39 @@ void print_times_table(int n)
 		{
 			break;
 		};
-		result = i;
 		putchar('0');
-		putchar(',');
-		for (j = 1; j <= n; j++)
+		result = i;
+		for (j = 0; j <= n; j++)
 		{
-			putchar(' ');
-			tens = result / 10;
-			if (tens > 0)
-			{
-				hunds = tens / 10;
-				hunds > 0 ? putchar(hunds + '0') : putchar(' ');
-				tens = tens % 10;
-				putchar(tens + '0');
-			} else {
-				putchar(' ');
-				putchar(' ');
-			};
-			output = result % 10;
-			putchar(output + '0');
-			if (j < n)
-			{
-				putchar(',');
-			};
-			result += i;
+			count(result);
+			result = result + i;
 		};
+
 		putchar('\n');
 	};
+}
+
+int show(int result)
+{
+	int hund,
+	    tens;
+
+	putchar(' ');
+	tens = result / 10;
+	if (tens > 0)
+	{
+		hunds = tens / 10;
+		if (hunds > 0)
+		{
+			putchar(hunds + '0');
+		} else
+		{
+			putchar(' ')
+		};
+		putchar(tens % 10 + '0');
+	} else
+	{
+		putchar(' ');
+	};
+	putchar(result % 10 + '0');
 }
