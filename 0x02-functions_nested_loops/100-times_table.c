@@ -1,5 +1,7 @@
 #include "main.h"
 
+int show(int);
+
 /**
  * print_times_table - accessory function
  *
