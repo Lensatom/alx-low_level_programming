@@ -1,33 +1,77 @@
-#include "stdio.h"
+int count;
 
-/**
- * main - entry point
- *
- * Description: A program that prints all the (excluded)
- * fibonacci sequece till the 98th term
- *
- * Return: always 0 (success)
- */
+unsigned long fib1 = 0, fib2 = 1, sum;
 
-int main(void)
+unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+
+unsigned long half1, halff2;
+
+
+
+for (count = 0; count < 92; count++)
+
 {
-	int i;
-	unsigned long sum,
-	    fib1 = 0,
-	    fib2 = 1;
 
-	for (i = 0; i <= 98; i++)
-	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-		if (i < 99)
-		{
-			printf(", ");
-		};
-		fib1 = fib2;
-		fib2 = sum;
-	};
-	printf("\n");
+sum = fib1 + fib2;
 
-	return (0);
+printf("%lu, ", sum);
+
+
+
+fib1 = fib2;
+
+fib2 = sum;
+
 }
+
+fib1_half1 = fib1 / 10000000000;
+
+fib2_half1 = fib2 / 10000000000;
+
+fib1_half2 = fib1 % 10000000000;
+
+fib2_half2 = fib2 % 10000000000;
+
+
+
+for (count = 93; count < 99; count++)
+
+{
+
+half1 = fib1_half1 + fib2_half1;
+
+halff2 = fib1_half2 + fib2_half2;
+
+if (fib1_half2 + fib2_half2 > 9999999999)
+
+{
+
+half1 += 1;
+
+halff2 %= 10000000000;
+
+}
+
+
+
+printf("%lu%lu", half1, halff2);
+
+if (count != 98)
+
+printf(", ");
+
+
+
+fib1_half1 = fib2_half1;
+
+fib1_half2 = fib2_half2;
+
+fib2_half1 = half1;
+
+fib2_half2 = halff2;
+
+}
+
+printf("\n");
+
+return (0);
