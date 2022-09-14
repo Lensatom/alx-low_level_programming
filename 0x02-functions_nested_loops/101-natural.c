@@ -1,9 +1,9 @@
 #include "main.h"
 
 /*
- * main - accessory funtion
+ * main - entry point
  *
- * Description: a program that prints all numbers below 1024
+ * Description: A program that prints all numbers below 1024
  *
  * Return: always 0 (success)
  */
