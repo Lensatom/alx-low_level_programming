@@ -3,7 +3,8 @@
 /**
  * main - entry point
  *
- * Description: A program that prints all the fibonacci sequece till the 98th term
+ * Description: A program that prints all the (excluded)
+ * fibonacci sequece till the 98th term
  *
  * Return: always 0 (success)
  */
@@ -15,7 +16,7 @@ int main(void)
 	    fib1 = 0,
 	    fib2 = 1;
 
-	for (i = 0; i < 98; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
