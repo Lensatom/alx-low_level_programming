@@ -20,11 +20,12 @@ void print_times_table(int n)
 	    output;
 
 	for (i = 0; i <= n; i++)
+	{
 		if (n > 15)
 		{
 			break;
-		}
-		result = j;
+		};
+		result = i;
 		putchar('0');
 		putchar(',');
 		for (j = 1; j <= n; j++)
@@ -50,4 +51,5 @@ void print_times_table(int n)
 			result += i;
 		};
 		putchar('\n');
+	};
 }
