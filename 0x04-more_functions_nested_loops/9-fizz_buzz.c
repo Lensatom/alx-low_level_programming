@@ -14,6 +14,7 @@ int main(void)
 		if (i == 100)
 		{
 			printf("Buzz ");
+		};
 		if ((i % 15) == 0)
 		{
 			printf("FizzBuzz");
