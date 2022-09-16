@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Function that prints an integer
+ * print_number - Function that prints an integer
  * @n: integer to print
  * Return: always 0 (success)
  */
@@ -17,7 +17,9 @@ void print_number(int n)
 	}
 
 	if ((num / 10) > 0)
+	{
 		/* A recurssion to always print the non-last numbers*/
 		print_number(num / 10);
+	};
 	_putchar((num % 10) + 48);
 }
