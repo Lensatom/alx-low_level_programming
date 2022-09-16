@@ -10,7 +10,7 @@
 int mul(int a, int b)
 {
 	int output;
-	
+
 	if (a < 0 || b < 0)
 	{
 		a = abs(a);
