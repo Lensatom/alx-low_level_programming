@@ -20,6 +20,6 @@ void more_numbers(void)
 			}
 			putchar(i % 10);
 		};
-	}
-	putchar('\n');
+		putchar('\n');
+	};
 }
