@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
  * main - A funtion that prints the highest prime factor of 612852475143
