@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * print_triangle - prints out a triangle with size of the size parameter
@@ -6,11 +6,12 @@
  * Return: always void (success)
  */
 
-void print_triangle(int size)
+void print_triangle(size)
 {
 	int i,
 	    j,
-	    k;
+	    k,
+	    size = 10;
 
 	for (i = 0; i < size; i++)
 	{
