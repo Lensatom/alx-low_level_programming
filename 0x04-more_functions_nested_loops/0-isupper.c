@@ -1,16 +1,16 @@
-#include "main.h"
+#include "stdio.h"
+#include "ctype.h"
+#include "stdlib.h"
 
 /**
- * _islower - assccory function
- *
- * Description: returns a value for if the letter is lowercase or not
+ * _islower - returns a value for if the letter is uppercase or not
  *
  * @c: the undecided letter type
  *
  * Return: 0 or 1 (success)
  */
 
-int _islower(int c)
+int _isupper(int c)
 {
 	int decider,
 	    output;
