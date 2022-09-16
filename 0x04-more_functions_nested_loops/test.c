@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * print_diagonal - prints a diagonal line
@@ -6,10 +6,11 @@
  * Return: void (success)
  */
 
-void print_diagonal(int n)
+int main(void)
 {
 	int i,
-	    j;
+	    j,
+	    n = 5;
 
 	for (i = 0; i < n; i++)
 	{
@@ -24,4 +25,6 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	};
+
+	return (0);
 }
