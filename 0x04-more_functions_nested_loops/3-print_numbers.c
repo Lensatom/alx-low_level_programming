@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * mul - returns the product of a and b
- * @a: a number;
- * @b: another number
- * Return: 0 or 1 (success)
+ * print_numbers - prints all numbers from 0 till 9
+ * Return: void (success)
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	int output;
+	int i;
 
-	output = a * b;
-
-	return (output);
+	for (i = 0; i <= 9; i++)
+	{
+		putchar(i);
+	};
 }
