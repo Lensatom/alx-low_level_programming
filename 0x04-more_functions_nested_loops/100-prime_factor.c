@@ -5,7 +5,7 @@
  * Return: always 0 (success)
  */
 
-int main (void)
+int main(void)
 {
 	unsigned long i = 612852475143;
 	unsigned long divisor = 2;
@@ -24,5 +24,5 @@ int main (void)
 
 	printf("%lu\n", i);
 
-	return(0);
+	return (0);
 }
