@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
 * mian - A function that runs the fizz buzz algorithm
