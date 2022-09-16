@@ -11,7 +11,8 @@ int main(void)
 	int i,
 	    j,
 	    k,
-	    space = 10;
+	    size = 10,
+	    space = size;
 
 	for (i = 0; i < size; i++)
 	{
