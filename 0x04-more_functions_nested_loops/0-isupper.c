@@ -1,6 +1,4 @@
-#include "stdio.h"
-#include "ctype.h"
-#include "stdlib.h"
+#include "main.h"
 
 /**
  * _islower - returns a value for if the letter is uppercase or not
