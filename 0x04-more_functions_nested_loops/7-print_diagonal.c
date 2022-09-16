@@ -1,18 +1,24 @@
 #include "main.h"
 
 /**
- * print_line - prints a straight line
+ * print_diagonal - prints a straight line
  * @n: number of times straight line should be printed
  * Return: void (success)
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int i;
+	int i,
+	    j;
 
 	for (i = 0; i < n; i++)
 	{
+		for (j = 0; j <= i; j++)
+		{
+			putchar(' ');
+		};
 		putchar('_');
+		putchsr('\n');
 	};
 	putchar('\n');
 }
