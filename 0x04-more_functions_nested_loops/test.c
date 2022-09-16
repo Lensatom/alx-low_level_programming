@@ -1,36 +1,27 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
- * print_triangle - prints out a triangle with size of the size parameter
- * @size: The magnitude in length of supposed hypothenus and adjacent
- * Return: always void (success)
+ * print_diagonal - prints a diagonal line
+ * @n: number of times straight line should be printed
+ * Return: void (success)
  */
 
-int main(void)
+void print_diagonal(int n)
 {
 	int i,
-	    j,
-	    k,
-	    size = 10,
-	    space = size;
+	    j;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i++)
 	{
-		space--;
-		for (j = space; j > 0; j--)
+		for (j = 0; j < i; j++)
 		{
 			putchar(' ');
 		};
-		for (k = space; k < size; k++)
-		{
-			putchar('#');
-		};
-		putchar('\n');
+		_putchar('\\');
+		_putchar('\n');
 	};
-	if (size <= 0)
+	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	};
-
-	return (0);
 }
