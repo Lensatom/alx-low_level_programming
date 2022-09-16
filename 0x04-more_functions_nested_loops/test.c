@@ -12,19 +12,19 @@ int main(void)
 	    j,
 	    k,
 	    size = 10,
-	    space = size - 1;
+	    space = size;
 
 	for (i = 0; i < size; i++)
 	{
+		space--;
 		for (j = space; j > 0; j--)
 		{
 			putchar(' ');
 		};
-		for (k = (size - space); k < size; k++)
+		for (k = space; k < size; k++)
 		{
 			putchar('#');
 		};
-		space--;
 		putchar('\n');
 	};
 	if (size <= 0)
