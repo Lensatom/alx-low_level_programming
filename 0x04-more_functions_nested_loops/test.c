@@ -17,17 +17,17 @@ int main(void)
 	{
 		for (j = (size - 1); j > 0; j--)
 		{
-			_putchar(' ');
+			putchar(' ');
 		};
 		for (k = 1; k < size; k++)
 		{
-			_putchar('#');
+			putchar('#');
 		};
-		_putchar('\n');
+		putchar('\n');
 	};
 	if (size <= 0)
 	{
-		_putchar('\n');
+		putchar('\n');
 	};
 
 	return (0);
