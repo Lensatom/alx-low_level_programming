@@ -12,7 +12,7 @@ int main(void)
 	    j,
 	    k,
 	    size = 10,
-	    space = size;
+	    space = size - 1;
 
 	for (i = 0; i < size; i++)
 	{
