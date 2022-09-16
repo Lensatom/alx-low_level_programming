@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* mian - A function that runs the fizz buzz algorithm
+* main - A function that runs the fizz buzz algorithm
 * Return: always 0 (success)
 */
 
