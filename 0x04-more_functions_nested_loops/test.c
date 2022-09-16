@@ -11,15 +11,15 @@ int main(void)
 	int i,
 	    j,
 	    k,
-	    size = 10;
+	    space = 10;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = (size - 1); j > 0; j--)
+		for (j = space; j > 0; j--)
 		{
 			putchar(' ');
 		};
-		for (k = 1; k < size; k++)
+		for (k = (size - space); k < size; k++)
 		{
 			putchar('#');
 		};
