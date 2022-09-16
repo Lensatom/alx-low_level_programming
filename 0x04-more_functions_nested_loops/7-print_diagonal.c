@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints a straight line
+ * print_diagonal - prints a diagonal line
  * @n: number of times straight line should be printed
  * Return: void (success)
  */
