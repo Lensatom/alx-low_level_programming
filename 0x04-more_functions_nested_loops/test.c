@@ -23,6 +23,7 @@ int main(void)
 		{
 			putchar('#');
 		};
+		space--;
 		putchar('\n');
 	};
 	if (size <= 0)
