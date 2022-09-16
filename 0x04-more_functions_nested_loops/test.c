@@ -18,12 +18,12 @@ int main(void)
 		{
 			putchar(' ');
 		};
-		_putchar('\\');
-		_putchar('\n');
+		putchar('\\');
+		putchar('\n');
 	};
 	if (n <= 0)
 	{
-		_putchar('\n');
+		putchar('\n');
 	};
 
 	return (0);
