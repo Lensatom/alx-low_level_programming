@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * _isdigit - returns a value for if c is a number
- * @c: the undecided letter type
+ * mul - returns the product of a and b
+ * @a: a number;
+ * @b: another number
  * Return: 0 or 1 (success)
  */
 
-int _isdigit(int c)
+int mul(int a, int b)
 {
 	int output;
-
-	if (isdigit(c))
+	
+	if (a < 0 || b < 0)
 	{
-		output = 1;
-	} else
-	{
-		output = 0;
-	};
+		a = abs(a);
+		b = abs(b);
+	}
+	output = a * b;
 
 	return (output);
 }
