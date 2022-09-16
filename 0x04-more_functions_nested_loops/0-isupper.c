@@ -13,7 +13,7 @@ int _isupper(int c)
 	int decider,
 	    output;
 
-	decider = islower(c);
+	decider = isupper(c);
 	if (decider > 0)
 	{
 		output = 1;
