@@ -19,7 +19,7 @@ void print_diagonal(int n)
 			putchar(' ');
 		};
 		putchar('\\');
-		putchsr('\n');
+		putchar('\n');
 	};
 	putchar('\n');
 }
