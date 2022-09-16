@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - returns a value for if the letter is uppercase or not
+ * _isupper - returns a value for if the letter is uppercase or not
  *
  * @c: the undecided letter type
  *
