@@ -6,7 +6,7 @@
  * Return: always void (success)
  */
 
-void print_triangle(size)
+int main(void)
 {
 	int i,
 	    j,
@@ -29,4 +29,6 @@ void print_triangle(size)
 	{
 		_putchar('\n');
 	};
+
+	return (0);
 }
