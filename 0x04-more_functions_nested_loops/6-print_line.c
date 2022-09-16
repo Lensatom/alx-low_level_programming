@@ -1,25 +1,18 @@
 #include "main.h"
 
 /**
- * more_numbers - prints all numbers from 0 till 14
+ * print_line - prints a straight line
+ * @n: number of times straight line should be printed
  * Return: void (success)
  */
 
-void more_numbers(void)
+void print_line(int n)
 {
-	int t,
-	    i;
+	int i;
 
-	for (t = 0; t < 10; t++)
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i <= 14; i++)
-		{
-			if ((i / 10) > 0)
-			{
-				putchar((i / 10) + '0');
-			}
-			putchar((i % 10) + '0');
-		};
-		putchar('\n');
+		putchar('_');
 	};
+	putchar('\n');
 }
