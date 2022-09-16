@@ -1,3 +1,3 @@
 #include <stdio.h>
 
-int largest_number(int int int);
+int largest_number(int, int, int);
