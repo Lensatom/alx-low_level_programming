@@ -9,13 +9,13 @@
 void rev_string(char *s)
 {
 	int len,
-	    i,
-	    reversed;
+	    i;
+	char reversed[];
 
 	len = strlen(s);
 	for (i = (len - 1); i >= 0; i--)
 	{
-		reversed = reversed + s[i];
+		reversed[(len - 1) - i] = s[i];
 	};
 	*s = reversed;
 }
