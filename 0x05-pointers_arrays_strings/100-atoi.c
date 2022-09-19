@@ -14,8 +14,16 @@ int _atoi(char *s)
 	    len = strlen(s);
 
 	while (i < len)
+	{
 		if (s[i] == '+')
 			positive++;
+		else if (s[i] == '-')
+			negative++;
+		for (j = '0'; j <= '9'; j++)
+			if (s[i] = j)
+				cleaned[ci] = s[i];
+	}
+	*s = cleaned
 
-	return (positive);
+	return (atoi(s));
 }
