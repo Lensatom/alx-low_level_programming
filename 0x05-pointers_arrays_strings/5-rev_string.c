@@ -10,10 +10,15 @@ void rev_string(char *s)
 {
 	int len = strlen(s),
 	    i;
-	vector<char> mirror[len];
+	/* Limit of an array */
+	mirror[1000];
 
-	for (i = (len - 1); i >= 0; i--)
+	for (i = 0; i < len; i++)
 	{
 		mirror[i] = s[i];
+	};
+	for (i = (len - 1); i >= 0; i--)
+	{
+		s[(len - 1) - i] = mirror[i];
 	};
 }
