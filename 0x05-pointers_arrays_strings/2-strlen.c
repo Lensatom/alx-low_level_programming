@@ -1,7 +1,5 @@
 #include "main.h"
 
-void print_count(int);
-
 /**
  * _strlen - A function that prints the length of a string
  * @s: The string to count
