@@ -51,13 +51,14 @@ int _atoi(char *s)
 
 int get_number(char *s, int start, int end)
 {
-	int hrcy,
-	    num;
+	int i,
+	    hrcy,
+	    num = 0;
 
 	hrcy = end - start;
 	for (i = 0; i < hrcy; i++)
 	{
 		num = num + atoi(s[start + i]) + (10 ** i)
-	}
+	};
 
-	return num;
+	return (num);
