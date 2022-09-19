@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
- * reset_to_98 - A function that changes the value of it parameter in memory
- * @n: The address of the value to be changed
+ * swap_int - A function that swaps the value of the two parameters
+ * @a: The address of the first value
+ * @b: The address of the second value
  * Return: Always void (success)
  */
 
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	*n = 98;
+	int accm;
+
+	accm = *b;
+	*b = *a;
+	*a = accm;
 }
