@@ -9,8 +9,10 @@
 
 int _atoi(char *s)
 {
-	int cleaned[200],
-	    numbers[10] = "0123456789",
+	int cleaned[200];
+	char num[10] = "0123456789";
+	int i,
+	    j,
 	    positive = 0,
 	    negative = 0,
 	    ci = 0,
@@ -25,7 +27,7 @@ int _atoi(char *s)
 			negative++;
 		else
 		{
-			for (j = 0; j < 9; j++)
+			for (j = 0; j < 10; j++)
 			{
 				if (s[i] == num[j])
 				{
@@ -35,6 +37,7 @@ int _atoi(char *s)
 			};
 		};
 	};
+	s = cleaned;
 
-	return (atoi(cleaned));
+	return (atoi(s));
 }
