@@ -1,22 +1,15 @@
 #include "main.h"
 
 /**
- * print_array - A function that prints a number of characters from an array
- * @a: The array to be printed from
- * @n: The number of characters to be printed form the array
- * Return: Always void (success)
+ * strcpy - A function that copies an array and prints in to another address
+ * @dest: The destination array
+ * @src: The source array
+ * Return: Always the modified destination array (success)
  */
 
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
+	*dest = strcpy(*src);
 
-	for (i = 0; i < n; i++)
-	{
-		if (i < (n - 1))
-			printf("%d, ", a[i]);
-		else
-			printf("%d", a[i]);
-	};
-	printf("\n");
+	return (*dest);
 }
