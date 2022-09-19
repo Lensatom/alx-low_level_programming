@@ -11,61 +11,23 @@ int get_number(char*, int, int);
 
 int _atoi(char *s)
 {
-	int i = 0,
-	    start,
-	    end,
-	    negative,
-	    len = strlen(s),
-	    num;
+	unsigned int num = 0;
+	int sign = 1;
+	char s_cpy = s;
 
-	while (i < len)
+	while (*s_cpy != '\0' && (*s_cpy < '0' || *temp > '9'))
 	{
-		if (s[i] == '-')
-			negative++;
-		else if (isdigit(s[i]))
-		{
-			start = i;
-			end = i;
-			while (1)
-			{
-				if (!(isdigit(s[end])))
-					break;
-				end++;
-			};
-		};
+		if(*s_cpy == '-')
+			sign = sign * -1;
+		s_cpy++;
 	};
-	if (negative % 2 == 1)
-		num = get_number(s, start, end) * -1;
-	num = get_number(s, start, end);
-
-	return (num);
-}
-
-/**
- * get_number - The function that gets the actual number from the string
- * @s: the string
- * @start: the number start point
- * @end: the number end point (exclusive)
- * Return: the real number
- */
-
-int get_number(char *s, int start, int end)
-{
-	int i,
-	    j,
-	    hrcy,
-	    pow = 1,
-	    num = 0;
-	char *single;
-
-	hrcy = end - start;
-	for (i = 0; i < hrcy; i++)
+	if (*s_cpy != '\0')
 	{
-		for (j = 0; j < hrcy; j++)
-			pow *= 10;
-		single = &s[start + i];
-		num = num + atoi(single) + pow;
+		do {
+			num = (num * 10) + (*s_cpy - '0');
+			s_cpy++
+		} while (*s_cpy >= '0' && *s_cpy <= '9');
 	};
 
-	return (num);
+	return (num * sign);
 }
