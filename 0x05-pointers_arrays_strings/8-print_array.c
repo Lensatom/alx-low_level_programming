@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- * puts2 - A function that prints a every other character of a string
- * @str: The string to be printed
+ * print_array - A function that prints a number of characters from an array
+ * @a: The array to be printed from
+ * @n: The number of characters to be printed form the array
  * Return: Always void (success)
  */
 
-void puts2(char *str)
+void print_array(int *a, int n)
 {
-	int len,
-	    i;
+	int i;
 
 	len = strlen(str);
-	for (i = 0; i < len; i = i + 2)
+	for (i = 0; i < n; i++)
 	{
-		_putchar(str[i]);
+		if (i < (n - 1))
+			printf("%d, ", a[i]);
+		else
+			printf("%d\n", a[i]);
 	};
-	_putchar('\n');
 }
