@@ -10,8 +10,12 @@
 int _atoi(char *s)
 {
 	int i = 0,
+	    j,
+	    negative,
 	    positive,
-	    len = strlen(s);
+	    len = strlen(s),
+	    ci = 0;
+	char cleaned[200];
 
 	while (i < len)
 	{
