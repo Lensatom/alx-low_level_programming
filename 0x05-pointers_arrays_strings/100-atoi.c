@@ -37,5 +37,5 @@ int _atoi(char *s)
 		};
 	};
 
-	return (atoi(s[start..end]));
+	return (1);
 }
