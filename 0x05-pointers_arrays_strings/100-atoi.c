@@ -59,7 +59,7 @@ int get_number(char *s, int start, int end)
 	hrcy = end - start;
 	for (i = 0; i < hrcy; i++)
 	{
-		single = s[start + i];
+		single = &s[start + i];
 		num = num + atoi(single) + (10 ** i);
 	};
 
