@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int len,
 	    i,
 	    *s_cpy_p
-	char s_cpy;
+	char s_cpy[];
 
 	s_cpy = *s;
 	len = strlen(*s_cpy_p);
