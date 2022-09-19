@@ -34,6 +34,7 @@ int _atoi(char *s)
 				j++;
 			};
 			end = j - 1;
+		};
 	};
 
 	return (atoi(s[start..end]));
