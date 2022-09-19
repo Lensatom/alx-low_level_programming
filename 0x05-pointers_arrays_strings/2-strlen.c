@@ -8,7 +8,7 @@ void print_count(int);
  * Return: Always the length of str (success)
  */
 
-int _strlen(int *s)
+int _strlen(char *s)
 {
 	int len;
 
