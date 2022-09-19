@@ -9,35 +9,13 @@
 
 int _atoi(char *s)
 {
-	int cleaned[200];
-	char num[10] = "0123456789";
-	int i,
-	    j,
-	    positive = 0,
-	    negative = 0,
-	    ci = 0,
-	    len;
+	int i = 0,
+	    positive,
+	    len = strlen(s);
 
-	len = strlen(s);
-	for (i = 0; i < len; i++)
-	{
-		if (s[i] == "+")
+	while (i < len)
+		if (s[i] == '+')
 			positive++;
-		else if (s[i] == "-")
-			negative++;
-		else
-		{
-			for (j = 0; j < 10; j++)
-			{
-				if (s[i] == num[j])
-				{
-					cleaned[ci] = s[i];
-					ci++;
-				};
-			};
-		};
-	};
-	s = cleaned;
 
-	return (atoi(s));
+	return (positive);
 }
