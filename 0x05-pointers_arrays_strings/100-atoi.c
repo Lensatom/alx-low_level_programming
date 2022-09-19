@@ -17,7 +17,7 @@ int _atoi(char *s)
 	s_cpy = s;
 	while (*s_cpy != '\0' && (*s_cpy < '0' || *s_cpy > '9'))
 	{
-		if(*s_cpy == '-')
+		if (*s_cpy == '-')
 			sign = sign * -1;
 		s_cpy++;
 	};
