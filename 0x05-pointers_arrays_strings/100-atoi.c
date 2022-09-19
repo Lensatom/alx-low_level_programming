@@ -3,10 +3,9 @@
 int get_number(char*, int, int);
 
 /**
- * _strcpy - A function that copies an array and prints in to another address
- * @dest: The destination array
- * @src: The source array
- * Return: Always the modified destination array (success)
+ * _atoi - A function that prints out integers from strings and sentences
+ * @s: The string or sentence to print from
+ * Return: Always the number (success)
  */
 
 int _atoi(char *s)
