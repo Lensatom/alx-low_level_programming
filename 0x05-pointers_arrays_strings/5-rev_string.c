@@ -9,12 +9,11 @@
 void rev_string(char *s)
 {
 	int len = strlen(s),
-	    i;
-	char reversed[len];
+	    i,
+	    mirror = s;
 
 	for (i = (len - 1); i >= 0; i--)
 	{
-		reversed[(len - 1) - i] = s[i];
+		s[(len - 1) - i] = mirror[i];
 	};
-	*s = reversed;
 }
