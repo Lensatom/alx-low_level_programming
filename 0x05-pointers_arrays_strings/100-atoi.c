@@ -7,9 +7,11 @@
  * Return: Always the modified destination array (success)
  */
 
-char *_strcpy(char *dest, char *src)
+char _atoi(char *s)
 {
-	strcpy(dest, src);
+	int cleaned;
 
-	return (dest);
+	cleaned = atoi(s);
+
+	return (cleaned);
 }
