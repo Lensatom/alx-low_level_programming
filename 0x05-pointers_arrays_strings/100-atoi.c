@@ -15,7 +15,7 @@ int _atoi(char *s)
 	    end
 	    negative,
 	    positive,
-	    len = strlen(s),
+	    len = strlen(s);
 
 	while (i < len)
 	{
