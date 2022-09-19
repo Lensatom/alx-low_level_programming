@@ -4,11 +4,11 @@ void print_count(int);
 
 /**
  * _strlen - A function that prints the length of a string
- * @str: The string to count
+ * @s: The string to count
  * Return: Always the length of str (success)
  */
 
-int _strlen(int *str)
+int _strlen(int *s)
 {
 	int len;
 
