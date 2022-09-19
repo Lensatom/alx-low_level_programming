@@ -24,10 +24,10 @@ int _atoi(char *s)
 		else if (s[i] == '-')
 			negative++;
 		for (j = '0'; j <= '9'; j++)
-			if (s[i] = j)
+			if (s[i] == j)
 				cleaned[ci] = s[i];
 	}
-	*s = cleaned
+	s = cleaned;
 
 	return (atoi(s));
 }
