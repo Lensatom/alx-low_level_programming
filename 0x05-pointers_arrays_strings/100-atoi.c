@@ -64,3 +64,4 @@ int get_number(char *s, int start, int end)
 	};
 
 	return (num);
+}
