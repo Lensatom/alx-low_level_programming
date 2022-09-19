@@ -27,11 +27,11 @@ int _atoi(char *s)
 		{
 			start = i;
 			j = i;
-			while (true)
+			while (1)
 			{
 				if (!(isdigit(s[j])))
 					break;
-				j++
+				j++;
 			};
 			end = j - 1;
 	};
