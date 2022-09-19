@@ -1,6 +1,6 @@
 #include "stdio.h"
 #include "string.h"
-#include "strlib.h"
+#include "stdlib.h"
 
 int _putchar(int r);
 void reset_to_98(int *n);
