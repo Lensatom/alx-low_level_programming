@@ -53,7 +53,7 @@ int get_number(char *s, int start, int end)
 {
 	int i,
 	    hrcy,
-	    pow = 1;
+	    pow = 1,
 	    num = 0;
 	char *single;
 
