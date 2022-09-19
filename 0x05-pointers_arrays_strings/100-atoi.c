@@ -52,6 +52,7 @@ int _atoi(char *s)
 int get_number(char *s, int start, int end)
 {
 	int i,
+	    j,
 	    hrcy,
 	    pow = 1,
 	    num = 0;
