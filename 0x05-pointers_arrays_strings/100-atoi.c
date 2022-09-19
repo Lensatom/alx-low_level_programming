@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int i = 0,
 	    j,
 	    start,
-	    end
+	    end,
 	    negative,
 	    positive,
 	    len = strlen(s);
@@ -30,10 +30,11 @@ int _atoi(char *s)
 			while (true)
 			{
 				if (!(isdigit(s[j])))
-					break
-			}
-			end = j - 1
-	}
+					break;
+				j++
+			};
+			end = j - 1;
+	};
 
 	return (atoi(s[start..end]));
 }
