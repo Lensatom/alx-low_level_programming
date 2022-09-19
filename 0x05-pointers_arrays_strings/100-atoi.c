@@ -1,6 +1,6 @@
 #include "main.h"
 
-int get_number(char, int, int);
+int get_number(char*, int, int);
 
 /**
  * _strcpy - A function that copies an array and prints in to another address
@@ -15,7 +15,8 @@ int _atoi(char *s)
 	    start,
 	    end,
 	    negative,
-	    len = strlen(s);
+	    len = strlen(s),
+	    num;
 
 	while (i < len)
 	{
@@ -48,7 +49,7 @@ int _atoi(char *s)
  * Return: the real number
  */
 
-int get_number(char s, int start, int end)
+int get_number(char *s, int start, int end)
 {
 	int hrcy,
 	    num;
