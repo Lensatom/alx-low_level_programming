@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * _strlen - A function that prints the length of a string
- * @s: The string to count
- * Return: Always the length of str (success)
+ * print_rev - A function that prints a string iin reverse
+ * @s: The string to be printed
+ * Return: Always void (success)
  */
 
-int _strlen(char *s)
+void print_rev(char *s)
 {
 	int len;
 
 	len = strlen(s);
-
-	return (len);
+	for (i = (len - 1); i <= 0; i++)
+	{
+		putchar(s[i])
+	}
 }
