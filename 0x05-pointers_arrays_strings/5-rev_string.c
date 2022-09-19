@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int len = strlen(s),
 	    i;
 	/* Limit of an array */
-	mirror[1000];
+	char mirror[1000];
 
 	for (i = 0; i < len; i++)
 	{
