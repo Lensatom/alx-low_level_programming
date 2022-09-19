@@ -10,10 +10,11 @@ void print_rev(char *s)
 {
 	int len,
 	    i,
-	    s_cpy;
+	    *s_cpy_p
+	char s_cpy;
 
 	s_cpy = *s;
-	len = strlen(&s_cpy);
+	len = strlen(*s_cpy_p);
 	for (i = (len - 1); i >= 0; i++)
 	{
 		_putchar(s_cpy[i]);
