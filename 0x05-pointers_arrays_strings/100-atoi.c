@@ -53,14 +53,17 @@ int get_number(char *s, int start, int end)
 {
 	int i,
 	    hrcy,
+	    pow = 1;
 	    num = 0;
 	char *single;
 
 	hrcy = end - start;
 	for (i = 0; i < hrcy; i++)
 	{
+		for (j = 0; j < hrcy; j++)
+			pow *= 10;
 		single = &s[start + i];
-		num = num + atoi(single) + pow(10, i);
+		num = num + atoi(single) + pow;
 	};
 
 	return (num);
