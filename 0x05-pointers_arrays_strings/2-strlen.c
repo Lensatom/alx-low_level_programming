@@ -1,17 +1,33 @@
 #include "main.h"
 
+void print_count(int);
+
 /**
- * swap_int - A function that swaps the value of the two parameters
- * @a: The address of the first value
- * @b: The address of the second value
+ * _strlen - A function that prints the length of a string
+ * @str: The string to count
  * Return: Always void (success)
  */
 
-void swap_int(int *a, int *b)
+void _strlen(int *str)
 {
-	int accm;
+	int len;
 
-	accm = *b;
-	*b = *a;
-	*a = accm;
+	len = strlen(*str);
+	print_count(len);
+	_putchar((len % 10) + '0');
+	_putchar('\n');
+}
+
+/**
+ * print_count - Prints any number with putchar
+ * @num - The number to be printed
+ */
+
+void print_count(int num)
+{
+	if (num / 10 > 0)
+	{
+		_putchar((num / 10) + '0');
+		print_count(num / 10);
+	};
 }
