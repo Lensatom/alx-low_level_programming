@@ -7,7 +7,7 @@
  * Return: Always the modified destination array (success)
  */
 
-char _atoi(char *s)
+int _atoi(char *s)
 {
 	int cleaned;
 
