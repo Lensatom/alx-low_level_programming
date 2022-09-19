@@ -11,11 +11,11 @@ int _atoi(char *s)
 {
 	int i = 0,
 	    j,
+	    start,
+	    end
 	    negative,
 	    positive,
 	    len = strlen(s),
-	    ci = 0;
-	char cleaned[200];
 
 	while (i < len)
 	{
@@ -23,11 +23,17 @@ int _atoi(char *s)
 			positive++;
 		else if (s[i] == '-')
 			negative++;
-		for (j = '0'; j <= '9'; j++)
-			if (s[i] == j)
-				cleaned[ci] = s[i];
+		else if (isdigit(s[i]))
+		{
+			start = i;
+			j = i;
+			while (true)
+			{
+				if (!(isdigit(s[j])))
+					break
+			}
+			end = j - 1
 	}
-	s = cleaned;
 
-	return (atoi(s));
+	return (atoi(s[start..end]));
 }
