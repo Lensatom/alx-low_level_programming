@@ -1,16 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen - A function that prints the length of a string
- * @s: The string to count
- * Return: Always the length of str (success)
+ * _puts - A function that prints a string to standard output
+ * @str: The string to be printed
+ * Return: Always void (success)
  */
 
-int _strlen(char *s)
+void _puts(char *str)
 {
-	int len;
-
-	len = strlen(s);
-
-	return (len);
+	puts(*str);
 }
