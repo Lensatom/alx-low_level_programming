@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "stdlib.h"
+#include "string.h"
 
 int _putchar(int r);
 void reset_to_98(int *n);
