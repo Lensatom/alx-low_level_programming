@@ -13,8 +13,9 @@ int _atoi(char *s)
 {
 	unsigned int num = 0;
 	int sign = 1;
-	char s_cpy = s;
+	char *s_cpy;
 
+	s_cpy = s;
 	while (*s_cpy != '\0' && (*s_cpy < '0' || *temp > '9'))
 	{
 		if(*s_cpy == '-')
