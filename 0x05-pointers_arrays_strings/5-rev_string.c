@@ -10,10 +10,10 @@ void rev_string(char *s)
 {
 	int len = strlen(s),
 	    i,
-	    mirror = s;
+	    mirror[len];
 
 	for (i = (len - 1); i >= 0; i--)
 	{
-		s[(len - 1) - i] = mirror[i];
+		mirror[i] = s[i];
 	};
 }
