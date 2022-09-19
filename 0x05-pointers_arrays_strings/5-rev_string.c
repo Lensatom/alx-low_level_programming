@@ -9,8 +9,8 @@
 void rev_string(char *s)
 {
 	int len = strlen(s),
-	    i,
-	    mirror[len];
+	    i;
+	char mirror[len];
 
 	for (i = (len - 1); i >= 0; i--)
 	{
