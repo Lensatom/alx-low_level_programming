@@ -11,7 +11,8 @@ char *leet(char *str)
 	char rmv[5] = "AEOTL",
 	     add[5] = "43071";
 	int i,
-	    j;
+	    j,
+	    len;
 
 	for (i = 0; i < len; i++)
 	{
