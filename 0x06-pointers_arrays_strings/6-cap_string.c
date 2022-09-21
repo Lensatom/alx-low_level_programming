@@ -18,7 +18,8 @@ char *cap_string(char *str)
 	{
 		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == sprts[j])
+			if ((str[i] == sprts[j]) &&
+(toupper(str[i + 1]) >= 'A' && toupper(str[i + 1]) <= 'Z'))
 				str[i + 1] = toupper(str[i + 1]);
 		}
 	}
