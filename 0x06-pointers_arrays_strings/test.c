@@ -13,7 +13,7 @@ int main(void)
 	char dest[100] = "Hello";
 	char src[3] = "Hey";
 
-	putchar(strlen(dest));
+	putchar(strlen(dest) + '0');
 
 	return (0);
 }
