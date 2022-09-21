@@ -7,7 +7,7 @@
  * Return: Always less, greater or equal to 0 (success)
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int result;
 
