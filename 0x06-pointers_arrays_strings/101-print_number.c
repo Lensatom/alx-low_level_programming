@@ -1,15 +1,24 @@
 #include "main.h"
 
 /**
- * _strcat - A function that concatenates two strings
- * @dest: The host string that will hold the result
- * @src: The added string
- * Return: Always the concatenated string
+ * print_number - A function that prints a number unsing putchar
+ * @n: The number
+ * Return: Always void (success)
  */
 
-char *_strcat(char *dest, char *src)
+void print_number(int n)
 {
-	strcat(dest, src);
+	unsigned int num = n;
+	int div;
+
+	div = int / 10;
+	if (n < 0)
+		_putchar('-');
+	if (div > 0)
+	{
+		print_number(div);
+	}
+	_putchar((num % 10) + '0');
 
 	return (dest);
 }
