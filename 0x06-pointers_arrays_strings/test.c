@@ -13,6 +13,7 @@ int main(void)
 	char src[3] = "Hey";
 
 	strcat(dest, src);
-	putchar(dest);
+	printf("%s\n", dest);
+
 	return (0);
 }
