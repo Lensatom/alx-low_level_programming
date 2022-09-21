@@ -17,7 +17,7 @@ char *rot13(char *str)
 	len = strlen(str);
 	for (i = 0; i < len; i++)
 	{
-		for (j = 0; j < 26; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (str[i] == val[j])
 				str[i] = sub[j];
