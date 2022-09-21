@@ -7,9 +7,12 @@
  * Return: Always the concatenated string
  */
 
-char *_strcat(char *dest, char *src)
+int main(void)
 {
-	strcat(dest, src);
+	char dest[100] = "Hello";
+	char src[3] = "Hey";
 
-	return (dest);
+	strcat(dest, src);
+	putchar(dest);
+	return (0);
 }
