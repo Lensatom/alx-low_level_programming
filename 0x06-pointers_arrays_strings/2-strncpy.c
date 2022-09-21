@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - A function that concatenates a string to n chars from another
+ * _strncpy - A function that copies src into dest
  * @dest: The host string that will hold the result
  * @src: The added string
  * Return: Always the concatenated string
