@@ -8,14 +8,12 @@
 
 char *rot13(char *str)
 {
-	char sub[52] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM",
-	     val[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char sub[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM",
+	     val[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i,
-	    j,
-	    len;
+	    j;
 
-	len = strlen(str);
-	for (i = 0; i < len; i++)
+	for (i = 0; i!= '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
