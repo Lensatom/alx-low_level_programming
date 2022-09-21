@@ -13,7 +13,7 @@ int main(void)
 	char dest[100] = "Hello";
 	char src[3] = "Hey";
 
-	printf("This is %s\n", strlen(dest));
+	printf("This is %d\n", strlen(dest));
 
 	return (0);
 }
