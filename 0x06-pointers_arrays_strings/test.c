@@ -12,8 +12,9 @@ int main(void)
 {
 	char dest[100] = "Hello";
 	char src[3] = "Hey";
+	int len;
 
-	putchar(strlen(dest) + '0');
+	len 
 
 	return (0);
 }
