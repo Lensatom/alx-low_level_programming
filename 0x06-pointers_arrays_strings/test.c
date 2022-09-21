@@ -11,11 +11,10 @@ int main(void)
 {
 	char dest[100] = "Hello";
 	char src[3] = "Hey";
-	int result[100];
 
-	result = strcat(dest, src);
+	strcat(dest, src);
 
-	printf("This is %s\n", result);
+	printf("This is %s\n", dest);
 
 	return (0);
 }
