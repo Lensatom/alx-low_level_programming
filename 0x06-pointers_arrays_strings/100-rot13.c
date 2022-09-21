@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * cap_string - Capitalizes each word in a string
- * @str: The input string
- * Return: Always the capitalixed string
+ * leet - A function that encodes a string into 1337
+ * @str: The string to be encoded
+ * Return: The encoded string
  */
 
-char *cap_string(char *str)
+char *leet(char *str)
 {
-	char sprts[13] = " \t\n,;.!?\"(){}";
-	int len,
-	    i,
-	    j;
+	char rmv[5] = "AEOTL",
+	     add[5] = "43071";
+	int i,
+	    j,
+	    len;
 
 	len = strlen(str);
-	str[0] = toupper(str[0]);
 	for (i = 0; i < len; i++)
 	{
-		for (j = 0; j < 13; j++)
+		for (j = 0; j < 5; j++)
 		{
-			if (str[i] == sprts[j])
-				str[i + 1] = toupper(str[i + 1]);
-		}
-	}
+			if (toupper(str[i]) == rmv[j])
+				str[i] = add[j];
+		};
+	};
 
 	return (str);
 }
