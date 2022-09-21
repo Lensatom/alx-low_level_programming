@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	    j;
 
 	len = strlen(str);
-	str[0] = toupper(str[0])
+	str[0] = toupper(str[0]);
 	for (i = 0; i < len; i++)
 	{
 		for (j = 0; j < 13; j++)
