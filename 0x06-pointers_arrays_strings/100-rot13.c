@@ -8,8 +8,8 @@
 
 char *leet(char *str)
 {
-	char rmv[5] = "AEOTL",
-	     add[5] = "43071";
+	char sub[26] = "nopqrstuvwxyzabcdefghijklm",
+	     val[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i,
 	    j,
 	    len;
@@ -17,10 +17,12 @@ char *leet(char *str)
 	len = strlen(str);
 	for (i = 0; i < len; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 26; j++)
 		{
-			if (toupper(str[i]) == rmv[j])
-				str[i] = add[j];
+			if (str[i] == val[j] && isupper(str[i]))
+				str[i] = toupper(sub[j]);
+			else if (str[i] == val[j])
+				str[i] = sub[j];
 		};
 	};
 
