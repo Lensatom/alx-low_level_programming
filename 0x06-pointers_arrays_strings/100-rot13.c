@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * leet - A function that encodes a string into 1337
+ * rot13 - A function that encodes a string into ROT13
  * @str: The string to be encoded
  * Return: The encoded string
  */
 
-char *leet(char *str)
+char *rot13(char *str)
 {
 	char sub[26] = "nopqrstuvwxyzabcdefghijklm",
 	     val[26] = "abcdefghijklmnopqrstuvwxyz";
