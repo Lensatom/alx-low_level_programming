@@ -8,8 +8,8 @@
 
 char *rot13(char *str)
 {
-	char sub[26] = "nopqrstuvwxyzabcdefghijklm",
-	     val[26] = "abcdefghijklmnopqrstuvwxyz";
+	char sub[52] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM",
+	     val[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i,
 	    j,
 	    len;
@@ -19,9 +19,7 @@ char *rot13(char *str)
 	{
 		for (j = 0; j < 26; j++)
 		{
-			if (str[i] == val[j] && isupper(str[i]))
-				str[i] = toupper(sub[j]);
-			else if (str[i] == val[j])
+			if (str[i] == val[j])
 				str[i] = sub[j];
 		};
 	};
