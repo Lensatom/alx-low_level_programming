@@ -10,7 +10,6 @@ void print_number(int n)
 {
 	unsigned int num = n;
 
-	div = num / 10;
 	if (n < 0)
 	{
 		_putchar('-');
