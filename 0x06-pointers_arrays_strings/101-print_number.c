@@ -13,10 +13,10 @@ void print_number(int n)
 
 	div = num / 10;
 	if (n < 0)
-		_putchar('-');
+		putchar('-');
 	if (div > 0)
 	{
 		print_number(div);
 	}
-	_putchar((num % 10) + '0');
+	putchar((num % 10) + '0');
 }
