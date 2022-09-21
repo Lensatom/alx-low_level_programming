@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * _strncpy - A function that copies src into dest
- * @dest: The host string that will hold the result
- * @src: The added string
- * Return: Always the concatenated string
+ * _strcmp - A function that copies src into dest
+ * @s1: A string
+ * @s2: A string
+ * Return: Always less, greater or equal to 0 (success)
  */
 
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2);
 {
-	strncat(dest, src, n);
+	int result;
 
-	return (dest);
+	result = strcmp(s1, s2);
+
+	return (result);
 }
