@@ -19,7 +19,7 @@ char *leet(char *str)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (toUpper(str[i]) == rmv[j])
+			if (toupper(str[i]) == rmv[j])
 				str[i] = add[j];
 		};
 	};
