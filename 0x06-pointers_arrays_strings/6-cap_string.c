@@ -9,7 +9,9 @@
 char *cap_string(char *str)
 {
 	char sprts[13] = " \t\n,;.!?\"(){}";
-	int len;
+	int len,
+	    i,
+	    j;
 
 	len = strlen(str);
 	for (i = 0; i < len; i++)
