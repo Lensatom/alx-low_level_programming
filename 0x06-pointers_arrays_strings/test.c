@@ -13,7 +13,8 @@ int main(void)
 	char src[3] = "Hey";
 
 	strcat(dest, src);
-	printf("%s\n", dest);
+
+	printf("This is %s\n", dest);
 
 	return (0);
 }
