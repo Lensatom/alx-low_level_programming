@@ -13,7 +13,10 @@ void print_buffer(char *b, int size)
 	    j;
 
 	if (size < 0)
+	{
 		printf("\n");
+		return;
+	};
 	while (i < size)
 	{
 		if (i % 10 == 0)
