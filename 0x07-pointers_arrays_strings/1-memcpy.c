@@ -2,8 +2,8 @@
 
 /**
  * _memcpy - A function that copies bytes from memory src to memory dest
- * @s: The source memory
- * @c: The destination memory
+ * @src: The source memory
+ * @dest: The destination memory
  * @n: The number of bytes to be populated in s
  * Return: Always the pointer to the destination memory (success)
  */
