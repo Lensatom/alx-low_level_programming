@@ -3,11 +3,11 @@
 
 
 /**
- * * File: main.h
- * * Auth: Ibilola
- * * description: Header file containing prototypes for all functions
- * * used in 0x07-pointers_arrays_strings directory.
- * */
+ * File: main.h
+ * Auth: Ibilola
+ * description: Header file containing prototypes for all functions
+ * used in 0x07-pointers_arrays_strings directory.
+ */
 
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
