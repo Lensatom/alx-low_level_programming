@@ -1,10 +1,12 @@
 #ifndef FILE_MAIN
 #define FILE_MAIN
 
+#include "stdio.h"
+#include "stddef.h"
 
 /**
  * File: main.h
- * Auth: Ibilola
+ * Auth: Ayomide Atayero
  * description: Header file containing prototypes for all functions
  * used in 0x07-pointers_arrays_strings directory.
  */
