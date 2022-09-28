@@ -10,7 +10,7 @@ int iterator(int n, int a);
 
 int is_prime_number(int n)
 {
-	iterator(n, 2);
+	return (iterator(n, 2));
 }
 
 /**
