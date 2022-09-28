@@ -1,6 +1,6 @@
 #include "main.h"
 
-int iterator(n, a);
+int iterator(int n, int a);
 
 /**
  * _sqrt_recursion - A fjnction that finds the square root of n
@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  * Return: The square root of n or -1 if n is not a perfect square
  */
 
-int iterator(n, a)
+int iterator(int n, int a)
 {
 	if (a * a == n)
 		return (a);
