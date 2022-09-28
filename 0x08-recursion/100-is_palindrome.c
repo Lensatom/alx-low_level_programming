@@ -10,7 +10,7 @@ int iterator(char *s, int a, int b);
 
 int is_palindrome(char *s)
 {
-	return (iterator(s, 0, strlen(s)));
+	return (iterator(s, 0, strlen(s) - 1));
 }
 
 /**
