@@ -14,7 +14,7 @@ int is_palindrome(char *s)
 }
 
 /**
- * iterator: A funtion that iterates over characters in s
+ * iterator - A funtion that iterates over characters in s
  * @s: The input string
  * @a: The lower limit of char to check
  * @b: The upper limit of char to check
@@ -24,7 +24,7 @@ int is_palindrome(char *s)
 int iterator(char *s, int a, int b)
 {
 	/* An empty string is a palindrome */
-	if (a == b)
+	if (a == b || b - a == 1 || b == -1)
 		return (1);
 	else if (s[a] != s[b])
 		return (0);
