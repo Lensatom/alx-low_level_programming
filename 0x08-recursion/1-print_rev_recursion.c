@@ -6,7 +6,7 @@
  * Return: Always void (success)
  */
 
-void _rint_rev_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	unsigned int len,
 		     i;
@@ -18,7 +18,7 @@ void _rint_rev_recursion(char *s)
 		_putchar(*s);
 		for(i = 0; i < len - 1; i++)
 			new[i] = *(s + i);
-		_rint_rev_recursion(new);
+		_print_rev_recursion(new);
 	};
 	_putchar(*s);
 	_putchar('\n');
