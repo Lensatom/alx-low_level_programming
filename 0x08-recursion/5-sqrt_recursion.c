@@ -24,7 +24,7 @@ int iterator(int n, int a)
 {
 	if (a * a == n)
 		return (a);
-	else if (a == n / 2)
+	else if (a == n / 2 || n < 0)
 		return (-1);
 	else
 		return (iterator(n, a + 1));
