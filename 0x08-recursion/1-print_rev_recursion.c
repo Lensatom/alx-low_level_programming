@@ -10,8 +10,7 @@ void print_rev_recursion(char *s)
 {
 	unsigned int len,
 		     i;
-	char new[];
-	int *new_add;
+	char new[999];
 
 	len = strlen(s);
 	*new_add = &new;
@@ -20,7 +19,7 @@ void print_rev_recursion(char *s)
 		_putchar(s[len - 1]);
 		for(i = 0; i < len - 1; i++)
 			new[i] = s[i];
-		print_rev_recursion(new_add);
+		print_rev_recursion(new);
 	};
 	_putchar(s);
 	_putchar('\n');
