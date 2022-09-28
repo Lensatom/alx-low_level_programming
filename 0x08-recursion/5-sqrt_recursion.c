@@ -1,5 +1,7 @@
 #include "main.h"
 
+int iterator(n, a);
+
 /**
  * _sqrt_recursion - A fjnction that finds the square root of n
  * @n: The number whose square root has to be found
