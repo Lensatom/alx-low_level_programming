@@ -22,7 +22,7 @@ int is_prime_number(int n)
 
 int iterator(int n, int a)
 {
-	if (n <= 0)
+	if (n <= 1)
 		return (0);
 	else if (n == a)
 		return (1);
