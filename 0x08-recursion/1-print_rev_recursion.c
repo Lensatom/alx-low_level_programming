@@ -13,7 +13,6 @@ void print_rev_recursion(char *s)
 	char new[999];
 
 	len = strlen(s);
-	*new_add = &new;
 	if (len > 1)
 	{
 		_putchar(s[len - 1]);
