@@ -1,5 +1,7 @@
 #include "main.h"
 
+int iterator(char *s, int a, int b);
+
 /**
  * is_palindrome - Checks if a stribg is the same backwards
  * @s: The string to check
@@ -19,7 +21,7 @@ int is_palindrome(char *s)
  * Return: 1 if a and b are tge same allthrough and 0 if otherwise
  */
 
-int iterator(char *s, a, b)
+int iterator(char *s, int a, int b)
 {
 	/* An empty string is a palindrome */
 	if (a == b)
