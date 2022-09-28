@@ -24,7 +24,7 @@ int is_palindrome(char *s)
 int iterator(char *s, int a, int b)
 {
 	/* An empty string is a palindrome */
-	if (a == b || b - a == 1 || b == -1)
+	if (a == b || (b - a == 1 && s[b] == s[a]) || b == -1)
 		return (1);
 	else if (s[a] != s[b])
 		return (0);
