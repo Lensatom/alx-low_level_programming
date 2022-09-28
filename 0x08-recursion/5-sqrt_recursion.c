@@ -22,7 +22,9 @@ int _sqrt_recursion(int n)
 
 int iterator(int n, int a)
 {
-	if (a * a == n)
+	if (n == 1)
+		return (n);
+	else if (a * a == n)
 		return (a);
 	else if (a == n / 2 || n < 0)
 		return (-1);
