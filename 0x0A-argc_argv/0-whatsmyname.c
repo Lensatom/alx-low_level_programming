@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * my_name - A program that prints this filename
@@ -7,9 +7,9 @@
  * Return: Always void (success)
  */
 
-char my_name(int argc, char *argv[])
+int my_name(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 
-	return (argv[0]);
+	return (0);
 }
