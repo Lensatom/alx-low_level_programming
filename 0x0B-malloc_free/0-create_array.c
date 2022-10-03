@@ -9,7 +9,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	let i;
+	unsigned int i;
 	char *arr = (char*)malloc(size);
 
 	if (size == 0)
