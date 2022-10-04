@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	if (cat == NULL)
 		return (NULL);
 	k = -1;
-	while (i < space + ac);
+	while (i < space + ac)
 	{
 		k++;
 		leng = strlen(av[k]);
