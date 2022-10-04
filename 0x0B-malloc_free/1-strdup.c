@@ -14,10 +14,10 @@ char *_strdup(char *str)
 
 	/** Is str empty **/
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 	/** Is str not empty **/
 	leng = strlen(str);
-	str_dup = (char *)malloc(sizeof(char) * leng);
+	str_dup = (char *)malloc(sizeof(char) * (leng + 1));
 	/** Is malloc not successful */
 	if (str_dup == NULL)
 		return (NULL);
