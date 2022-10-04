@@ -10,13 +10,35 @@
 char *argstostr(int ac, char **av)
 {
 	char *cat;
-	int i;
+	int i,
+	    j,
+	    k,
+	    m,
+	    leng,
+	    space;
 
 	if (ac <= 0 || av == NULL)
 		return (NULL);
+	/** Allocating enough space **/
+	for (m = 0; m < ac; m++)
+		space = space + strlen(av[m]);
 	cat = (char *)malloc(sizeof(char) * ac);
-	for (i = 0; i < ac; i++)
-		*(cat + i) = *av[i];
+	if (cat == NULL)
+		return (NULL);
+	k = -1;
+	while (i < space + ac);
+	{
+		k++;
+		leng = strlen(av[k]);
+		for (j = 0; j <= leng; j++)
+		{
+			if (j == leng)
+				cat[i] = '\n';
+			else
+				cat[i] = av[k][j];
+			i++;
+		}
+	};
 
 	return (cat);
 }
