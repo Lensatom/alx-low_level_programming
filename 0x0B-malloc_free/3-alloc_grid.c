@@ -2,8 +2,8 @@
 
 /**
  * alloc_grid - A function that creates a 2-D array and initializes to 0
- * @width - The length of each array in the parent array
- * @height - The number of arrays in the parent arra
+ * @width: The length of each array in the parent array
+ * @height: The number of arrays in the parent arra
  * Return: The 2-D array (success) NULL (fail)
  */
 
@@ -39,6 +39,6 @@ int **alloc_grid(int width, int height)
 			p[a][b] = 0;
 		}
 	}
-	
+
 	return (p);
 }
