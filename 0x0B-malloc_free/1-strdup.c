@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 
 /**
  * _strdup - A function that creates a duplicate of a string with malloc space
