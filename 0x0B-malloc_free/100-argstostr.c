@@ -20,6 +20,7 @@ char *argstostr(int ac, char **av)
 	if (ac <= 0 || av == NULL)
 		return (NULL);
 	/** Allocating enough space **/
+	space = 0;
 	for (m = 0; m < ac; m++)
 		space = space + strlen(av[m]);
 	/** Making memory available for '\n' **/
