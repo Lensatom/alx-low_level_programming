@@ -9,7 +9,8 @@
 char *_strdup(char *str)
 {
 	char *str_dup;
-	int leng;
+	int leng,
+	    i;
 
 	/** Is str empty **/
 	if (str == NULL)
