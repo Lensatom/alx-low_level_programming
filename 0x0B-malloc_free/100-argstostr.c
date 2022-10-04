@@ -22,11 +22,13 @@ char *argstostr(int ac, char **av)
 	/** Allocating enough space **/
 	for (m = 0; m < ac; m++)
 		space = space + strlen(av[m]);
-	cat = (char *)malloc(sizeof(char) * ac);
+	/** Making memory available for '\n' **/
+	space = space + ac;
+	cat = (char *)malloc(sizeof(char) * space);
 	if (cat == NULL)
 		return (NULL);
 	k = -1;
-	while (i < space + ac)
+	while (i < space)
 	{
 		k++;
 		leng = strlen(av[k]);
