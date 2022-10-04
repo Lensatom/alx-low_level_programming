@@ -1,48 +1,52 @@
 #include "main.h"
 
 /**
- * str_concat - Cancatenates two strings into another array
- * using malloc for memory allocation
- * @s1: The first string
- * @s2: The second string
- * Return: The resulting concatenated string (success)
- * NULL (fail)
+ * str_concat - concatenates two strings
+ * @s1: a pointer to the first string
+ * @s2: a pointer to the second string
+ *
+ * Return: NULL if memory allocation fails,
+ * otherwise a pointer to the new string
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *host;
-	int leng1,
-	    leng2,
-	    i;
+	unsigned int len1 = 0;
+	unsigned int len2 = 0;
+	char *cat;
 
-	/** Is s1 and s2 empty **/
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-	/** Is either or both not empty **/
-	leng1 = strlen(s1);
-	leng2 = strlen(s2);
-	leng = strlen(s1) + strlen(s2);
-	if (leng1 == NULL)
+	if (s1)
 	{
-		host = (char *)malloc(sizeof(char) * (leng2 + 1));
-		for (i = 0; i < leng2; i++)
-			*(host + i) = str2[i];
-	}
-	else if (leng2 == NULL)
-	{
-		host = (char *)malloc(sizeof(char) * (leng2 + 1));
-		for (i = 0; i < leng1; i++)
-			*(host + i) = str1[i];
+		while (s1[len1])
+			++len1;
 	}
 	else
 	{
-		host = (char *)malloc(sizeof(char) * (leng + 1));
-		for (i = 0; i < leng1; i++)
-			*(host + i) = str1[i];
-		for (i = leng1; i < leng1 + leng2; i++)
-			*(host + i) = str2[i - leng1];
+		s1 = "";
+	}
+	if (s2)
+	{
+		while (s2[len2])
+			++len2;
+	}
+	else
+	{
+		s2 = "";
 	}
 
-	return (host);
+	cat = (char *) malloc(sizeof(char) * (len1 + len2 + 1));
+
+	if (!cat)
+		return (NULL);
+	if (s1)
+	{
+		for (len1 = 0; s1[len1]; ++len1)
+			cat[len1] = s1[len1];
+	}
+	if (s2)
+	{
+		for (len2 = 0; s2[len2]; ++len2)
+			cat[len1 + len2] = s2[len2];
+	}
+		cat[len1 + len2] = '\0';
+		return (cat);
 }
