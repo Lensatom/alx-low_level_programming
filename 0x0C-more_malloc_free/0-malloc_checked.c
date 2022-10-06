@@ -3,16 +3,17 @@
 /**
  * malloc_checked - A function taht allocates space just like malloc
  * @b: The memory space to be allocated
- * Return: A pointer to the memory (success)
+ * Return: void (success)
  */
 
 void *malloc_checked(unsigned int b)
 {
 	void *arr;
 
-	arr = *malloc(b);
+	arr = malloc(b);
+	/* Check if malloc was successful */
 	if (arr == NULL)
 		exit(98);
-	else
-		return (*malloc(b));
+	/* As long as malloc was successful */
+	return (arr);
 }
