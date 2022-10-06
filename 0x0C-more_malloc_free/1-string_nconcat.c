@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	home = (char *)malloc(sizeof(char) * leng + 1);
 	/* Check if malloc worked */
 	if (home == NULL)
-		return NULL;
+		return (NULL);
 	for (i = 0; i < strlen(s1); i++)
 		*(home + i) = s1[i];
 	for (i = 0; i < n; i++)
