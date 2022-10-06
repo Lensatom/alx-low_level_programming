@@ -2,10 +2,9 @@
 
 /**
  * array_range - A function that allocates memory to an array (excluded)
- * with elements having a size
- * @nmemb: Size of each element
- * @size: size of the array
- * Return: A pointer to the created (success) NULL (fail)
+ * @min: The lower value (included)
+ * @max: The upper value (included)
+ * Return: The array of range (success)
  */
 
 int *array_range(int min, int max)
@@ -15,7 +14,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	ptr = (int *)malloc(sizeof(int) * max - min + 1);
+	ptr = malloc(sizeof(int) * (max - min + 1));
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; min <= max; i++)
