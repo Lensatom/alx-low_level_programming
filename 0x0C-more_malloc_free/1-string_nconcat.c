@@ -13,10 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *home;
 	unsigned int i,
 		     leng;
-	
-	if (s1 == NULL)
+
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
 	leng = strlen(s1) + n;
 	home = (char *)malloc(sizeof(char) * leng + 1);
@@ -27,6 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*(home + i) = s1[i];
 	for (i = 0; i < n; i++)
 		*(home + strlen(s1) + i) = s2[i];
+	*(home + leng) = '\0';
 
 	return (home);
 }
