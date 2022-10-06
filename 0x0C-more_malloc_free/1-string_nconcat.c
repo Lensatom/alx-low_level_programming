@@ -13,7 +13,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *home;
 	unsigned int i,
 		     leng;
-
+	
+	if (n > strlen(s2))
+		n = strlen(s2);
 	leng = strlen(s1) + n;
 	home = (char *)malloc(sizeof(char) * leng + 1);
 	/* Check if malloc worked */
