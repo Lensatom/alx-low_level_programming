@@ -5,7 +5,7 @@
 
 /**
  * print_dog - Fuction that prints the data in the input struct
- * @dog: The input struct
+ * @d: The input struct
  * Return: Always void
  */
 
