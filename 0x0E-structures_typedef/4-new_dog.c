@@ -1,4 +1,7 @@
-#include <stdlib.h>
+#include "stdlib.h"
+#include "string.h"
+#include "stdio.h"
+#include "stddef.h"
 #include "dog.h"
 
 int _strlen(char *s);
@@ -19,8 +22,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name != NULL && owner != NULL)
 	{
-		name_l = _strlen(name) + 1;
-		own_l = _strlen(owner) + 1;
+		name_l = strlen(name) + 1;
+		own_l = strlen(owner) + 1;
 		cutie_dog = malloc(sizeof(dog_t));
 
 		if (cutie_dog == NULL)
@@ -43,8 +46,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 		}
 
-		cutie_dog->name = _strcpy(cutie_dog->name, name);
-		cutie_dog->owner = _strcpy(cutie_dog->owner, owner);
+		cutie_dog->name = strcpy(cutie_dog->name, name);
+		cutie_dog->owner = strcpy(cutie_dog->owner, owner);
 		cutie_dog->age = age;
 	}
 
