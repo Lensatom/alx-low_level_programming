@@ -14,7 +14,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	/* Getting params out */
 	va_start(ap, n);
-	sum = 0;
 	/* Looping and adding sumbers to sum */
 	for (i = 0; i < n; i++)
 	{
