@@ -9,10 +9,10 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
-	int sum,
-	    i;
+	unsigned int sum,
+		     i;
 
-	if (n <= 0)
+	if (n == 0)
 		return (0);
 	/* Getting params out */
 	va_start(ap, n);
@@ -24,4 +24,3 @@ int sum_them_all(const unsigned int n, ...)
 
 	return (sum);
 }
-
