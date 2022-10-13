@@ -17,10 +17,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	/* Looping and adding sumbers to sum */
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(ap, int) == NULL)
+		if (va_arg(ap, char *) == NULL)
 			printf("(nil)");
 		else
-			printf("%s", va_arg(ap, int));
+			printf("%s", va_arg(ap, char *));
 		/* Check if there is a seperator */
 		if (separator != NULL && i < n - 1)
 			printf("%s", separator);
