@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - Print numbers seperated by string
- * @seperator: The seperating string
+ * @separator: The seperating string
  * @n: The fixed parameter
  * Return: Always nothing
  */
