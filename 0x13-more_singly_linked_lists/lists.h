@@ -3,40 +3,29 @@
 #define LISTS_H
 
 /*
-
  * File: lists.h
-
  * Auth: Isaac Baccah
-
  * Desc: Header file containing prototypes and definitions for all functions
-
  *       and types written in the 0x12-more_singly_linked_lists directory.
-
  */
 
 #include <stdlib.h>
 
 /**
-
  * struct listint_s - singly linked list
-
  * @n: integer
-
  * @next: points to the next node
-
  *
-
  * Description: singly linked list node structure
-
  * for Holberton project
-
  */
 
 typedef struct listint_s
 
 {
 
-	int n;	struct listint_s *next;
+	int n;
+	struct listint_s *next;
 
 } listint_t;
 
